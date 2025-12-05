@@ -1,0 +1,110 @@
+== GARCH(1,1) com t-Student — Treino ==
+
+*---------------------------------*
+*          GARCH Model Fit        *
+*---------------------------------*
+
+Conditional Variance Dynamics 	
+-----------------------------------
+GARCH Model	: sGARCH(1,1)
+Mean Model	: ARFIMA(0,0,0)
+Distribution	: std 
+
+Optimal Parameters
+------------------------------------
+        Estimate  Std. Error  t value Pr(>|t|)
+omega   0.000006    0.000001   4.3764 0.000012
+alpha1  0.056502    0.008266   6.8353 0.000000
+beta1   0.911893    0.015214  59.9371 0.000000
+shape  12.782042    4.819422   2.6522 0.007997
+
+Robust Standard Errors:
+        Estimate  Std. Error  t value Pr(>|t|)
+omega   0.000006    0.000002   3.5154 0.000439
+alpha1  0.056502    0.007375   7.6610 0.000000
+beta1   0.911893    0.007407 123.1154 0.000000
+shape  12.782042    6.176865   2.0693 0.038514
+
+LogLikelihood : 2134.425 
+
+Information Criteria
+------------------------------------
+                    
+Akaike       -5.7424
+Bayes        -5.7175
+Shibata      -5.7424
+Hannan-Quinn -5.7328
+
+Weighted Ljung-Box Test on Standardized Residuals
+------------------------------------
+                        statistic p-value
+Lag[1]                    0.03782  0.8458
+Lag[2*(p+q)+(p+q)-1][2]   0.09367  0.9241
+Lag[4*(p+q)+(p+q)-1][5]   0.37851  0.9747
+d.o.f=0
+H0 : No serial correlation
+
+Weighted Ljung-Box Test on Standardized Squared Residuals
+------------------------------------
+                        statistic   p-value
+Lag[1]                     0.2122 6.450e-01
+Lag[2*(p+q)+(p+q)-1][5]   35.8151 7.165e-10
+Lag[4*(p+q)+(p+q)-1][9]   40.3441 5.792e-10
+d.o.f=2
+
+Weighted ARCH LM Tests
+------------------------------------
+            Statistic Shape Scale P-Value
+ARCH Lag[3]   0.03869 0.500 2.000  0.8441
+ARCH Lag[5]   0.16801 1.440 1.667  0.9729
+ARCH Lag[7]   0.75000 2.315 1.543  0.9505
+
+Nyblom stability test
+------------------------------------
+Joint Statistic:  5.2962
+Individual Statistics:              
+omega  0.41183
+alpha1 0.06152
+beta1  0.04726
+shape  0.11096
+
+Asymptotic Critical Values (10% 5% 1%)
+Joint Statistic:     	 1.07 1.24 1.6
+Individual Statistic:	 0.35 0.47 0.75
+
+Sign Bias Test
+------------------------------------
+                   t-value   prob sig
+Sign Bias           0.3344 0.7382    
+Negative Sign Bias  0.3031 0.7619    
+Positive Sign Bias  0.9554 0.3397    
+Joint Effect        2.1144 0.5490    
+
+
+Adjusted Pearson Goodness-of-Fit Test:
+------------------------------------
+  group statistic p-value(g-1)
+1    20     26.73      0.11102
+2    30     33.88      0.24383
+3    40     53.15      0.06493
+4    50     61.37      0.11054
+
+
+Elapsed time : 0.183727 
+
+
+-- Ljung-Box (lag=20) sobre resíduos padronizados --
+
+	Box-Ljung test
+
+data:  res
+X-squared = 10.243, df = 20, p-value = 0.9635
+
+
+-- ARCH LM (lags=12) --
+
+	ARCH LM-test; Null hypothesis: no ARCH effects
+
+data:  as.numeric(res)
+Chi-squared = 54.278, df = 12, p-value = 2.437e-07
+

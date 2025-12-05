@@ -1,0 +1,33 @@
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26100)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=English_world.utf8  LC_CTYPE=English_world.utf8    LC_MONETARY=English_world.utf8 LC_NUMERIC=C                   LC_TIME=English_world.utf8    
+
+time zone: America/Sao_Paulo
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] rugarch_1.5-4   scales_1.4.0    jsonlite_2.0.0  zoo_1.8-14      ggplot2_3.5.2   tidyr_1.3.1     tibble_3.3.0    lubridate_1.9.4 readr_2.1.5     dplyr_1.1.4    
+[11] yfR_1.1.2      
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.6                pingr_2.0.5                 ks_1.15.1                   processx_3.8.6              lattice_0.22-7              tzdb_0.5.0                 
+ [7] numDeriv_2016.8-1.1         quadprog_1.5-8              vctrs_0.6.5                 tools_4.5.1                 ps_1.9.1                    generics_0.1.4             
+[13] curl_6.4.0                  xts_0.14.1                  pkgconfig_2.0.3             Matrix_1.7-3                KernSmooth_2.23-26          RColorBrewer_1.1-3         
+[19] DistributionUtils_0.6-2     lifecycle_1.0.4             truncnorm_1.0-9             stringr_1.5.1               compiler_4.5.1              farver_2.1.2               
+[25] textshaping_1.0.3           spd_2.0-1                   codetools_0.2-20            SkewHyperbolic_0.4-2        FinTS_0.4-9                 Rsolnp_2.0.1               
+[31] pracma_2.4.4                crayon_1.5.3                pillar_1.11.0               nloptr_2.2.1                GeneralizedHyperbolic_0.8-7 MASS_7.3-65                
+[37] mclust_6.1.1                parallelly_1.45.1           fracdiff_1.5-3              tidyselect_1.2.1            digest_0.6.37               stringi_1.8.7              
+[43] mvtnorm_1.3-3               future_1.58.0               purrr_1.1.0                 listenv_0.9.1               labeling_0.4.3              tseries_0.10-58            
+[49] MCS_0.1.3                   grid_4.5.1                  cli_3.6.5                   magrittr_2.0.3              future.apply_1.20.0         withr_3.0.2                
+[55] bit64_4.6.0-1               timechange_0.3.0            TTR_0.24.4                  globals_0.18.0              bit_4.6.0                   quantmod_0.4.28            
+[61] ragg_1.5.0                  hms_1.1.3                   rlang_1.1.6                 Rcpp_1.1.0                  glue_1.8.0                  vroom_1.6.5                
+[67] rstudioapi_0.17.1           R6_2.6.1                    systemfonts_1.3.1          
